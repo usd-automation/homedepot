@@ -861,7 +861,7 @@ const msalConfig = {
   auth: {
     clientId: '16a3cfc4-724d-4f55-b839-c647720765d1',
     authority: 'https://login.microsoftonline.com/42f7676c-f455-423c-82f6-dc2d99791af7',
-    redirectUri: window.location.origin
+    redirectUri: window.location.hostname.includes('github.io') ? window.location.origin + '/homedepot/' : window.location.origin
   },
   cache: {
     cacheLocation: 'sessionStorage',
